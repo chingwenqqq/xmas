@@ -1,0 +1,49 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+input, button {
+    font-size: 30px;
+}
+#qber, #asoul ,#classmate1{
+    display: none;
+}
+.full {
+    background-image: url("../image/bg.png");
+    background-repeat: repeat-x;
+    background-color: #D2D2D2;
+    width: 100%;
+    height: 1250px;
+}
+.name {
+    padding-top: 100px;
+    text-align: center;
+    background-color: ;
+}
+.answer {
+    margin: 0 auto;
+    width: 600px;
+    height: 50px;
+    background-color: ;
+}
+.answer > p {
+    text-align: center;
+    color: #0FA197;
+    font-size: 20px;
+}
+.article {
+    margin-left: 100px;
+    width: 430px;
+    position: absolute;
+    padding-top: 500px;
+}
+.article > h1 {
+    font-size: 18px;
+    text-align: justify;
+    padding-right: 30px;
+    color: #0FA197;
+    position: absolute;
+    line-height: 24px;
+    letter-spacing: 1px;
+    text-transform: capitalize; 
+}

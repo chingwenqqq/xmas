@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Xmas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/xmas.css">
+<style>
+</style>
+</head>
+<body>
+<div class="full">
+    <div class="name">
+        <input type="text" id="name">
+        <button onclick="checkUser()">輸入</button>
+    </div>
+    <div class="answer">
+        <P>請輸入密碼 <3</P>
+        <img src="" id="picture">
+        <div class="content"> 
+        <!--我自己（測試）-->       
+        <div id="qber">
+            <div class="article">
+                <h1><span class="letter"></span>現在是<span id="time"></span>，祝你聖誕快樂</h1>
+            </div>
+            <img src="image/xmas-card.png" style=" width:600px;">
+        </div>
+        <!--給小柯的-->
+         <div id="classmate1">
+            <div class="article">
+                <h1><span class="letter"></span>，
+                <br>
+                這張卡片是小柯專屬的！祝你聖誕快樂</h1>
+            </div>
+            <img src="image/xmas-card.png" style=" width:600px;">
+        </div>
+
+        <!--給立群的卡片-->
+        <div id="asoul">
+            <div class="article">
+                <h1><span class="letter"></span>
+                <br>
+                這張卡片是asoul專屬的！祝你聖誕快樂～雖然你每天晚上都打呼，然後還胖胖的、圓滾滾的～一直說要瘦但是都瘦不下來～而且還在平安夜亂塞垃圾，而且還誣賴我把衛生紙丟到洗衣機...但我還是很愛你的啦！因為我自己也有很多缺點～</h1>
+            </div>
+            <img src="image/xmas-card.png" style=" width:600px;">
+        </div>
+         </div>
+    </div>
+</div>
+</div>
+<script>
+  function checkUser() {
+    var name = document.getElementById('name').value
+    if (name == 'qber') {
+        document.getElementById('qber').getElementsByClassName('letter')[0].innerHTML = "聖誕快樂！" + name
+        var date = new Date()
+        dateString = date.getFullYear() + '/' + (date.getMonth() + 1) + '/' + date.getDate()
+        document.getElementById('time').innerHTML = dateString
+        document.getElementById('qber').style.display = 'block'
+        document.getElementById('asoul').style.display = 'none'
+        document.getElementById('classmate1').style.display = 'none'
+    } else if(name == 'asoul') {
+        document.getElementById('asoul').getElementsByClassName('letter')[1].innerHTML = "聖誕快樂！" + name
+        document.getElementById('qber').style.display = 'none'
+        document.getElementById('asoul').style.display = 'block'
+        document.getElementById('classmate1').style.display = 'none'
+    } else if(name == '柯依婷') {
+        document.getElementById('classmate1').getElementsByClassName('letter')[2].innerHTML = "聖誕快樂！" + name
+        document.getElementById('qber').style.display = 'none'
+        document.getElementById('asoul').style.display = 'none'
+        document.getElementById('classmate1').style.display = 'block'
+    } else {
+      document.getElementById('letter').innerHTML = "你是誰啊？" + name
+    }
+  }
+</script>
+</body>
+</html>
