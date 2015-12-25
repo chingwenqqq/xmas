@@ -30,7 +30,27 @@
             <div class="article">
                 <h1><span class="letter"></span>，
                 <br>
-                這張卡片是小柯專屬的！祝你聖誕快樂</h1>
+                這張卡片是小柯專屬的！祝你聖誕快樂
+                <br>
+                好拉～不好意思最近一直欺負你～其實我因為太喜歡妳了！呵呵呵～你看你的卡片來了喔！！謝謝你對我的容忍和照顧～功課上也幫了我很多～很開心可以一起住，雖然這個學期很少待在宿舍～小柯我愛你！<br>
+                祝你聖誕快樂
+                <br>
+                阿還有你的甜點都好好吃喔！！</h1>
+            </div>
+            <img src="image/xmas-card.png" style=" width:600px;">
+        </div>
+         <!--給阿溫的-->
+        <div id="classmate2">
+            <div class="article">
+                <h1><span class="letter"></span>，
+                <br>
+                這張卡片是阿溫專屬的！祝你聖誕快樂
+                <br>
+                歹勢～其實今年沒有要送印出來的卡片，我只有試印四張～就被先遇到的有緣人拿走了～感覺開學後就很少像暑假的時候那樣有時間聊天了，只能再說一次很感謝那時候有你 <3 愛你！希望可以有機會再一起合作～
+                <br>
+                祝你聖誕快樂
+                <br>
+                </h1>
             </div>
             <img src="image/xmas-card.png" style=" width:600px;">
         </div>
@@ -59,16 +79,25 @@
         document.getElementById('qber').style.display = 'block'
         document.getElementById('asoul').style.display = 'none'
         document.getElementById('classmate1').style.display = 'none'
+        document.getElementById('classmate2').style.display = 'none'
     } else if(name == 'asoul') {
-        document.getElementById('asoul').getElementsByClassName('letter')[1].innerHTML = "聖誕快樂！" + name
+        document.getElementById('asoul').getElementsByClassName('letter')[0].innerHTML = "聖誕快樂！" + name
         document.getElementById('qber').style.display = 'none'
         document.getElementById('asoul').style.display = 'block'
         document.getElementById('classmate1').style.display = 'none'
-    } else if(name == '柯依婷') {
-        document.getElementById('classmate1').getElementsByClassName('letter')[2].innerHTML = "聖誕快樂！" + name
+        document.getElementById('classmate2').style.display = 'none'
+    } else if(name == 'muscle-man') {
+        document.getElementById('classmate1').getElementsByClassName('letter')[0].innerHTML = "聖誕快樂！" + name
         document.getElementById('qber').style.display = 'none'
         document.getElementById('asoul').style.display = 'none'
         document.getElementById('classmate1').style.display = 'block'
+        document.getElementById('classmate2').style.display = 'none'
+    } else if(name == '阿溫') {
+        document.getElementById('classmate2').getElementsByClassName('letter')[0].innerHTML = "聖誕快樂！" + name
+        document.getElementById('qber').style.display = 'none'
+        document.getElementById('asoul').style.display = 'none'
+        document.getElementById('classmate1').style.display = 'none'
+        document.getElementById('classmate2').style.display = 'block'
     } else {
       document.getElementById('letter').innerHTML = "你是誰啊？" + name
     }
