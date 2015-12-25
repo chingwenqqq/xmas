@@ -48,7 +48,7 @@
                 <br>
                 這張卡片是阿溫專屬的！祝你聖誕快樂
                 <br>
-                歹勢～其實今年沒有要送印出來的卡片，我只有試印四張～就被先遇到的有緣人拿走了～感覺開學後就很少像暑假的時候那樣有時間聊天了，只能再說一次很感謝那時候有你 <3 愛你！希望可以有機會再一起合作～一起煩惱～
+                歹勢～其實今年沒有要送印出來的卡片，我只有試印四張～就被先遇到的有緣人拿走了～感覺開學後就很少像暑假的時候那樣有時間聊天了，只能再說一次很感謝那時候有你 <3 愛你！希望可以有機會再一起合作～一起煩惱～應該說如果有阿溫的話，就不會太煩惱了！
                 <br>
                 祝你聖誕快樂
                 <br>
@@ -65,6 +65,22 @@
                 這張卡片是雯馨專屬的！祝你聖誕快樂
                 <br>
                 yaya～我終於修好了！這樣子就可以寫你的卡片了！我們常常一起上課誒！很感恩有你陪我一起上各種外系的課程，因為我後來發現如果沒有人在教室裡等我，我根本就不會想去上課，水彩已經想被當掉了，完全不想挽回～哈哈！總而言之，有一起上課的同伴感覺很好～我也很期待做膠彩畫的班展！到時候再一起加油吧！
+                <br>
+                祝你聖誕快樂。
+                <br>
+                </h1>
+            </div>
+            <img src="image/xmas-card.png" style=" width:600px;">
+        </div>
+
+         <!--給心薇的-->
+        <div id="classmate4">
+            <div class="article">
+                <h1><span class="letter"></span>，
+                <br>
+                這張卡片是心薇專屬的！祝你聖誕快樂
+                <br>
+                你真的是我們的小天使～我愛你！ლ(・ω・ლ)但是也要好好照顧自己喔！
                 <br>
                 祝你聖誕快樂。
                 <br>
@@ -99,6 +115,7 @@
         document.getElementById('classmate1').style.display = 'none'
         document.getElementById('classmate2').style.display = 'none'
         document.getElementById('classmate3').style.display = 'none'
+        document.getElementById('classmate4').style.display = 'none'
     } else if(name == 'asoul') {
         document.getElementById('asoul').getElementsByClassName('letter')[0].innerHTML = "聖誕快樂！" + name
         document.getElementById('qber').style.display = 'none'
@@ -106,6 +123,7 @@
         document.getElementById('classmate1').style.display = 'none'
         document.getElementById('classmate2').style.display = 'none'
         document.getElementById('classmate3').style.display = 'none'
+        document.getElementById('classmate4').style.display = 'none'
     } else if(name == 'muscle-man') {
         document.getElementById('classmate1').getElementsByClassName('letter')[0].innerHTML = "聖誕快樂！" + name
         document.getElementById('qber').style.display = 'none'
@@ -113,13 +131,15 @@
         document.getElementById('classmate1').style.display = 'block'
         document.getElementById('classmate2').style.display = 'none'
         document.getElementById('classmate3').style.display = 'none'
-    } else if(name == '阿溫') {
+        document.getElementById('classmate4').style.display = 'none'
+    } else if(name == 'amanda-wen') {
         document.getElementById('classmate2').getElementsByClassName('letter')[0].innerHTML = "聖誕快樂！" + name
         document.getElementById('qber').style.display = 'none'
         document.getElementById('asoul').style.display = 'none'
         document.getElementById('classmate1').style.display = 'none'
         document.getElementById('classmate2').style.display = 'block'
         document.getElementById('classmate3').style.display = 'none'
+        document.getElementById('classmate4').style.display = 'none'
     } else if(name == 'wenxin') {
         document.getElementById('classmate3').getElementsByClassName('letter')[0].innerHTML = "聖誕快樂！" + name
         document.getElementById('qber').style.display = 'none'
@@ -127,6 +147,15 @@
         document.getElementById('classmate1').style.display = 'none'
         document.getElementById('classmate2').style.display = 'none'
         document.getElementById('classmate3').style.display = 'block'
+        document.getElementById('classmate4').style.display = 'none'
+    } else if(name == 'sweet-heart') {
+        document.getElementById('classmate3').getElementsByClassName('letter')[0].innerHTML = "聖誕快樂！" + name
+        document.getElementById('qber').style.display = 'none'
+        document.getElementById('asoul').style.display = 'none'
+        document.getElementById('classmate1').style.display = 'none'
+        document.getElementById('classmate2').style.display = 'none'
+        document.getElementById('classmate3').style.display = 'none'
+        document.getElementById('classmate4').style.display = 'block'
     } else {
       document.getElementById('letter').innerHTML = "你是誰啊？" + name
     }
