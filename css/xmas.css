@@ -5,7 +5,8 @@ body, html {
 input, button {
     font-size: 30px;
 }
-#qber, #asoul ,#classmate1 ,#classmate2 ,#classmate3 ,#classmate4 ,#classmate5{
+#qber, #asoul ,#classmate1 ,#classmate2 ,#classmate3 ,#classmate4 ,#classmate5 
+,#classmate6 ,#senior1{
     display: none;
 }
 .full {
@@ -26,10 +27,11 @@ input, button {
     height: 50px;
     background-color: ;
 }
-.answer > p {
+.answer > h2 {
     text-align: center;
     color: #0FA197;
     font-size: 20px;
+    letter-spacing: px;
 }
 .article {
     margin-left: 100px;
