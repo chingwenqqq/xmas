@@ -48,7 +48,7 @@
                 <br>
                 這張卡片是阿溫專屬的！祝你聖誕快樂
                 <br>
-                歹勢～其實今年沒有要送印出來的卡片，我只有試印四張～就被先遇到的有緣人拿走了～感覺開學後就很少像暑假的時候那樣有時間聊天了，只能再說一次很感謝那時候有你 <3 愛你！希望可以有機會再一起合作～一起煩惱～應該說如果有阿溫的話，就不會太煩惱了！
+                歹勢～其實今年沒有要送印出來的卡片，我只有試印四張～就被先遇到的有緣人拿走了～感覺開學後就很少像暑假的時候那樣有時間聊天了இдஇ ，只能再說一次很感謝那時候有你 <3 愛你！希望可以有機會再一起合作～一起煩惱～應該說如果有阿溫的話，就不會太煩惱了！
                 <br>
                 祝你聖誕快樂
                 <br>
@@ -76,11 +76,27 @@
          <!--給心薇的-->
         <div id="classmate4">
             <div class="article">
-                <h1><span class="letter"></span>，
+                <h1><span class="letter"></span>
                 <br>
                 這張卡片是心薇專屬的！祝你聖誕快樂
                 <br>
                 你真的是我們的小天使～我愛你！ლ(・ω・ლ)但是也要好好照顧自己喔！
+                <br>
+                祝你聖誕快樂。
+                <br>
+                </h1>
+            </div>
+            <img src="image/xmas-card.png" style=" width:600px;">
+        </div>
+
+         <!--給嘉希的-->
+        <div id="classmate5">
+            <div class="article">
+                <h1><span class="letter"></span>
+                <br>
+                這張卡片是嘉希專屬的！祝你聖誕快樂
+                <br>
+                嘉希我愛你！我覺得你很認真也很厲害～覺得有些地方比我還要厲害很多，有很多事情要麻煩你，喜歡跟你一起吃飯一起做作業，一起抱怨，如果有什麼我幫得上忙的地方，都可以來麻煩我喔！
                 <br>
                 祝你聖誕快樂。
                 <br>
@@ -116,6 +132,7 @@
         document.getElementById('classmate2').style.display = 'none'
         document.getElementById('classmate3').style.display = 'none'
         document.getElementById('classmate4').style.display = 'none'
+        document.getElementById('classmate5').style.display = 'none'
     } else if(name == 'asoul') {
         document.getElementById('asoul').getElementsByClassName('letter')[0].innerHTML = "聖誕快樂！" + name
         document.getElementById('qber').style.display = 'none'
@@ -124,6 +141,7 @@
         document.getElementById('classmate2').style.display = 'none'
         document.getElementById('classmate3').style.display = 'none'
         document.getElementById('classmate4').style.display = 'none'
+        document.getElementById('classmate5').style.display = 'none'
     } else if(name == 'muscle-man') {
         document.getElementById('classmate1').getElementsByClassName('letter')[0].innerHTML = "聖誕快樂！" + name
         document.getElementById('qber').style.display = 'none'
@@ -132,6 +150,7 @@
         document.getElementById('classmate2').style.display = 'none'
         document.getElementById('classmate3').style.display = 'none'
         document.getElementById('classmate4').style.display = 'none'
+        document.getElementById('classmate5').style.display = 'none'
     } else if(name == 'amanda-wen') {
         document.getElementById('classmate2').getElementsByClassName('letter')[0].innerHTML = "聖誕快樂！" + name
         document.getElementById('qber').style.display = 'none'
@@ -140,6 +159,7 @@
         document.getElementById('classmate2').style.display = 'block'
         document.getElementById('classmate3').style.display = 'none'
         document.getElementById('classmate4').style.display = 'none'
+        document.getElementById('classmate5').style.display = 'none'
     } else if(name == 'wenxin') {
         document.getElementById('classmate3').getElementsByClassName('letter')[0].innerHTML = "聖誕快樂！" + name
         document.getElementById('qber').style.display = 'none'
@@ -148,14 +168,25 @@
         document.getElementById('classmate2').style.display = 'none'
         document.getElementById('classmate3').style.display = 'block'
         document.getElementById('classmate4').style.display = 'none'
+        document.getElementById('classmate5').style.display = 'none'
     } else if(name == 'sweet-heart') {
-        document.getElementById('classmate3').getElementsByClassName('letter')[0].innerHTML = "聖誕快樂！" + name
+        document.getElementById('classmate4').getElementsByClassName('letter')[0].innerHTML = "聖誕快樂！" + name
         document.getElementById('qber').style.display = 'none'
         document.getElementById('asoul').style.display = 'none'
         document.getElementById('classmate1').style.display = 'none'
         document.getElementById('classmate2').style.display = 'none'
         document.getElementById('classmate3').style.display = 'none'
         document.getElementById('classmate4').style.display = 'block'
+        document.getElementById('classmate5').style.display = 'none'
+    } else if(name == 'tania-christy-lei') {
+        document.getElementById('classmate5').getElementsByClassName('letter')[0].innerHTML = "聖誕快樂！" + name
+        document.getElementById('qber').style.display = 'none'
+        document.getElementById('asoul').style.display = 'none'
+        document.getElementById('classmate1').style.display = 'none'
+        document.getElementById('classmate2').style.display = 'none'
+        document.getElementById('classmate3').style.display = 'none'
+        document.getElementById('classmate4').style.display = 'none'
+        document.getElementById('classmate5').style.display = 'block'
     } else {
       document.getElementById('letter').innerHTML = "你是誰啊？" + name
     }
